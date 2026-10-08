@@ -64,3 +64,35 @@ src/main/java/com/banking
 ├── repository
 ├── security
 └── service
+
+## REST API Endpoints
+
+### Customer APIs
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/customers` | Create customer |
+| GET | `/api/customers` | Get all customers |
+| GET | `/api/customers/{id}` | Get customer by ID |
+| PUT | `/api/customers/{id}` | Update customer |
+| DELETE | `/api/customers/{id}` | Delete customer |
+
+### Account APIs
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/accounts` | Create account |
+| GET | `/api/accounts` | Get all accounts |
+| GET | `/api/accounts/{id}` | Get account by ID |
+| GET | `/api/accounts/number/{accountNumber}` | Get account by number |
+| PUT | `/api/accounts/{id}` | Update account |
+| DELETE | `/api/accounts/{id}` | Delete account |
+| POST | `/api/accounts/{id}/deposit` | Deposit money |
+| POST | `/api/accounts/{id}/withdraw` | Withdraw money |
+| POST | `/api/accounts/transfer` | Transfer money |
+
+### Transaction APIs
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/transactions/account/{accountId}` | Get transaction history |
