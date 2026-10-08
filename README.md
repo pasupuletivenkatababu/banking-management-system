@@ -70,6 +70,8 @@ src/main/java/com/banking
 ├── security
 └── service
 
+```
+
 ## REST API Endpoints
 
 ### Customer APIs
